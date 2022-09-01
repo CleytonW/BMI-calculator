@@ -6,9 +6,40 @@
 
 :root {
   font-size: 62.5%;
+
+  /* cores */
+  --tt-heading: #0C3440;
+
+  --tt-label: #00453A;
+  --tt-input: #212529;
+  --ot-outline: #02799D;
+  --bd-input: rgba(73, 80, 87, 0.3);
+  --tt-placeholder: rgba(73, 80, 87, 0.5);
+  
+  --tt-button: #ffff;
+  --bg-button: #02799D;
+
+  --bg-error: #F03E3E;
+  --tt-error: #ffff;
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   background-color: #040924;
   font-size: 1.6rem;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-content: center;  /* desbloqueado ao usar o grid, serve para alinhar a div no meio da página */
+}
+
+.card {
+  background-color: #fff;
+  max-width: 42.8rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+  margin-inline: auto; /* alinha a classa de acordo com as margens, como se fosse um 'margin: 0 auto' */
+  box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
+  border-radius: .6rem;
 }

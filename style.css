@@ -7,7 +7,7 @@
 :root {
   font-size: 62.5%;
 
-  /* cores */
+  /* colors */
   --tt-heading: #0C3440;
 
   --tt-label: #00453A;
@@ -121,6 +121,11 @@ form button:hover {
 
 /* modal */
 
+.modal-wrapper.open {
+  visibility: visible;
+  opacity: 1;
+}
+
 .modal-wrapper {
   position: absolute;
   background: rgba(0, 0, 0, 0.7);
@@ -151,4 +156,29 @@ form button:hover {
 
 .modal button:hover {
   transform: scale(1.1);
+}
+
+/* alert error */
+
+.alert-error.open {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.alert-error {
+  position: absolute;
+  background-color: var(--bg-error);
+  color: var(--tt-error);
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: .8rem 0;
+
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: transform .5s;
 }
